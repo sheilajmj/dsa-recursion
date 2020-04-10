@@ -76,20 +76,53 @@ console.log (countingSheep(3))
      
 
 
-// reverseString = ( str ) => {
+revStr = (str) => {
+  if(str === ""){
+  return str
+  }
+  return revStr(str.substr(1)) + str[0]
+}
 
-//     if ( str.length === 1 ){
-    
-//     return str ;
-//     }
-    
-//     else{
-    
-//     return reverseString ( str.substr ( 1 ) ) + str.charAt ( 0 ) ;
-//     }
+revStr("cat")
+
+
+//4. Triangle Number
+triangleNumber = (n) => {
+  if(n === 1){
+    return n
+  }
+return n + triangleNumber(n-1)
+}
+
+triangleNumber(9)
+
+//5. Reverse String
+////////ASK in Slack...
+// splitter = (num) => {
+// if (num.length === 4){
+//   return num
 // }
-    
-// reverseString('hello world!');
+
+// else{
+//   let n=0
+//   if(num.substr(n) === '/' ){
+//     return ','
+
+//   }
+
+
+//   )
+//   if (num.length === 4 ){
+//   return
+//   }
+//   else {
+//       console.log (num.substr(0, 2) + '/')
+//       return splitter(num-2)
+// }
+  
+
+// splitter("02/20/2020")
+
 
 
 // 6. Fibonacci
